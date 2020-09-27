@@ -14,7 +14,10 @@
 ### Not Included
 - Complete git history:
   - Constrained by time.
-  - My general workflow is making a branch for a feature and then using Webstorm's internal merge tool to go over changes made on pull. 
-  - I've got an auto-fetch tool so I never miss a merge.
+  - My general workflow is making a branch for a feature and then using Webstorm's internal merge tool to go over changes, per file during merge. 
+  - I've got an auto-fetch tool so I never miss an update.
+  
+- TDD 
+  - Constrained by time.
 
   
