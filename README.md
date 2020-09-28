@@ -9,7 +9,9 @@
   - Sharing
   - URL
 - Tests! : add a testing framework with unit tests and github actions
-- Structure : Move Business logic from routes into controller directory
+- Structure : 
+  - Move Business logic from routes into controller directory
+  - Unhardcode port after hosting is setup 
 
 
 ### Not Included
