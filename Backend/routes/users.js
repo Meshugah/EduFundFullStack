@@ -63,7 +63,7 @@ router.post('/getSurvey', async function (req, res) {
     }
 });
 
-router.post('/getAllSurveys',  async function (req, res) {
+router.post('/getAllSurveys', async function (req, res) {
     try {
         const getSurveys = await Survey.find({}, {_id: 0, __v: 0}).lean();  // lean allows you to convery Mongoose object to a plain object
         if (!getSurveys) return res.status(403).send("Survey does not exist")
@@ -78,12 +78,11 @@ router.post('/getAllSurveys',  async function (req, res) {
 
 
         // Map Submissions Objects to the Surveys
-        for(let i = 0; i < getSurveys.length; i++) {
-            if(Submissions[i].length !== 0 ) {
+        for (let i = 0; i < getSurveys.length; i++) {
+            if (Submissions[i].length !== 0) {
                 getSurveys[i].submissions = Submissions[i]
             }
         }
-
 
 
         res.status(200).send(getSurveys)
