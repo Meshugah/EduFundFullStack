@@ -17,7 +17,9 @@
 ### Not Included
 - Complete git history:
   - Constrained by time.
-  - My general workflow is making a branch for a feature and then using Webstorm's internal merge tool to go over changes, per file during merge. 
+  - My general workflow: 
+    - Locally: Making a branch for a feature and then using Webstorm's internal merge tool to go over changes, per file during merge.
+    - Github: Push branch and setup github actions to trigger on pull request aand run tests 
   - I've got an auto-fetch tool so I never miss an update.
   
 - TDD 
