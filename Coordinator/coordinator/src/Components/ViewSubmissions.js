@@ -36,14 +36,14 @@ class ViewSubmissions extends React.Component {
                 for (let i = 0; i <= cards.length - 1; i++) {
                     if (cards[i].submissions !== undefined) {
                         for (let j = 0; j <= cards[i].submissions.length - 1; j++) {
-                            surveyCards.push( <SubmissionCard key={i+1*j+1}
+                            surveyCards.push(<SubmissionCard key={i + 1 * j + 1}
 
-                                                           prompt={cards[i].prompt}
-                                                           optionSelected={cards[i].submissions[j].optionSelected}
-                                                           option1={cards[i].option1}
-                                                           option2={cards[i].option2}
-                                                           option3={cards[i].option3}
-                            /> )
+                                                             prompt={cards[i].prompt}
+                                                             optionSelected={cards[i].submissions[j].optionSelected}
+                                                             option1={cards[i].option1}
+                                                             option2={cards[i].option2}
+                                                             option3={cards[i].option3}
+                            />)
                         }
                     }
                 }

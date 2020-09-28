@@ -22,8 +22,8 @@ function Nav(props) {
                     <div>
                         <h3>Logo</h3>
                     </div>
-                        <ul class="d-flex align-items-center flex-wrap">
-                            <div class="d-flex align-items-center">
+                    <ul class="d-flex align-items-center flex-wrap">
+                        <div class="d-flex align-items-center">
                             <div class="col-md-auto">
                                 <Link style={navStyle} to="/createsurvey">
                                     Create Survey
@@ -34,8 +34,8 @@ function Nav(props) {
                                     Submissions
                                 </Link>
                             </div>
-                            </div>
-                        </ul>
+                        </div>
+                    </ul>
                 </div>
             </nav>
         )

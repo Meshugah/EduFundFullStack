@@ -53,28 +53,28 @@ class SubmitSurvey extends React.Component {
                         <fieldset className="form-group">
                             <div className="row">
                                 <div className="col-sm-10">
-                                    <div onChange={ event => this.setState({optionSelected: event.target.value})}>
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="gridRadios"
-                                               id="gridRadios1" value="option1" checked/>
+                                    <div onChange={event => this.setState({optionSelected: event.target.value})}>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="gridRadios"
+                                                   id="gridRadios1" value="option1" checked/>
                                             <label className="form-check-label" htmlFor="gridRadios1">
                                                 {this.state.option1}
                                             </label>
-                                    </div>
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="gridRadios"
-                                               id="gridRadios2" value="option2"/>
+                                        </div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="gridRadios"
+                                                   id="gridRadios2" value="option2"/>
                                             <label className="form-check-label" htmlFor="gridRadios2">
                                                 {this.state.option2}
                                             </label>
-                                    </div>
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="gridRadios"
-                                               id="gridRadios3" value="option3"/>
-                                        <label className="form-check-label" htmlFor="gridRadios3">
-                                            {this.state.option3}
-                                        </label>
-                                    </div>
+                                        </div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="gridRadios"
+                                                   id="gridRadios3" value="option3"/>
+                                            <label className="form-check-label" htmlFor="gridRadios3">
+                                                {this.state.option3}
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

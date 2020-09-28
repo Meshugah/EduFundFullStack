@@ -2,15 +2,14 @@ import React from 'react';
 import '../App.css';
 import axios from "axios";
 import Nav from "./Nav";
-import { useHistory } from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import auth from "../auth";
-
 
 
 function Register(props) {
     let history = useHistory();
 
-    const register = (e) =>  {
+    const register = (e) => {
         e.preventDefault()
         let request = {
             email: document.getElementById('exampleInputEmail1').value,
@@ -25,7 +24,7 @@ function Register(props) {
                 // stores jwt
                 auth.login(response.data)
 
-                if(auth.isAuthenticated(response.data)) {
+                if (auth.isAuthenticated(response.data)) {
                     let path = `/createsurvey`;
                     history.push(path);
                 }
@@ -69,7 +68,6 @@ function Register(props) {
         </div>
     );
 }
-
 
 
 export default Register;
