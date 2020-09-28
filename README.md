@@ -9,6 +9,7 @@
   - Sharing
   - URL
 - Tests! : add a testing framework with unit tests and github actions
+- Structure : Move Business logic from routes into controller directory
 
 
 ### Not Included
